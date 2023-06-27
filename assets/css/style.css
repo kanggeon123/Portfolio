@@ -1,4 +1,21 @@
-h1 {
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  header, footer {
+    align-items: center;
+    justify-content: space-between;
+    background: #13293d;
+    color: #fff;
+    display: flex;
+  }
+  
+  h1 {
     padding: 5px;
     padding-left: 5%;
     margin: 6px;
@@ -8,9 +25,8 @@ h1 {
     color: #13293d;
     right: 30px;
   }
-
   
-aside {
+  aside {
     font-size: 45px;
     flex: 20%;
     background-color: #fff;
@@ -48,7 +64,6 @@ aside {
     right: 30px;
   }
   
-
   .portfolio_pic {
     height: 500px;
     width: 100%;
@@ -62,4 +77,28 @@ aside {
     display: flex;
     margin: 15px;
   }
+  
+  /* 
+  What is the flex property a shorthand property for?
+  It is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties 
+  What is it doing here?
+  We are making the product card not growable, not shrinkable, and with an initial length of 400px 
+  */
+  
+  /* 
+  What does the flex-direction property define?
+  It defines in which direction the container wants to stack the flex items
+  What is it doing here? 
+  We are telling the main body and navbar to stack vertically in a column
+  */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
+  
   
