@@ -9,6 +9,46 @@ h1 {
     right: 30px;
   }
 
+  
+aside {
+    font-size: 45px;
+    flex: 20%;
+    background-color: #fff;
+    padding-right: 15px;
+    flex-wrap: wrap;
+    text-align: right;
+  }
+  
+  content {
+    flex: 80%;
+    background-color: #fff;
+    padding-left: 20px;
+    border-left: solid;
+    border-width: 3px;
+  }
+  
+  content ul {
+    font-size: 25px;
+  }
+  
+  nav a {
+    background-color: unset;
+    color: var(--navlink-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+    list-style-type: none;
+    color:#92d3e6;
+    right: 30px;
+  }
+  
+
   .portfolio_pic {
     height: 500px;
     width: 100%;
